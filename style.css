@@ -1,6 +1,8 @@
 body {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  background: linear-gradient(135deg, #ffe6f0, #e0f7fa);
+  font-family: 'Times New Roman', Times, serif;
+  background: linear-gradient(-45deg, #ffb3ec, #aee9ff, #fff3b0, #f5b8f3);
+background-size: 400% 400%;
+animation: gradient 10s ease infinite;
   color: #333;
   margin: 0;
   padding: 0;
@@ -58,4 +60,15 @@ footer {
   text-align: center;
   padding: 1em;
   font-size: 0.9em;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
